@@ -46,12 +46,12 @@ class SiriProxy::Plugin::Mashable < SiriProxy::Plugin
       img = article.css("a img").first
       	
       if img.nil?
-        img_url = "http://images.macworld.com/images/bapp/mwlogo-184.png"
+        img_url = "http://9.mshcdn.com/wp-content/uploads/2010/04/Mashable_Logo_230px.png"
       else
       	img_url = img['src']
       end
       	
-      descr = article.css("div div").first.content.strip
+      descr = article.css(".description").first.content.strip
       		
       if descr.nil?
         descr = " "
