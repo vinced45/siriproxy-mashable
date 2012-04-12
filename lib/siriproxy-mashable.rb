@@ -17,7 +17,7 @@ class SiriProxy::Plugin::Mashable < SiriProxy::Plugin
     #if you have custom configuration options, process them here!
   end
   
-  listen_for /mashable/i do |phrase|
+  listen_for /mash/i do |phrase|
 	  masNews = "today"
 	  mas(masNews) #in the function, request_completed will be called when the thread is finished
 	end
